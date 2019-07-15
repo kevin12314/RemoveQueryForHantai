@@ -1,2 +1,2 @@
-# RemoveQueryForHantai
+# RemoveQueryForHentai
 清除圖片連結Query，移除網站離開時跳出詢問視窗
