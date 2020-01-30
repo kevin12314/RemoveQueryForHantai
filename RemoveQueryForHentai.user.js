@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
+// @updateURL     https://github.com/kevin12314/RemoveQueryForHentai/raw/master/RemoveQueryForHentai.user.js
 // @include       *://www.porncomics.me/*
 // @include       http://www.3dcomix.pro/*
 // @include       http://www.toonsex.pics/*
