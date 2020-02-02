@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         使連結不帶query字串
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @updateURL     https://github.com/kevin12314/RemoveQueryForHentai/raw/master/RemoveQueryForHentai.user.js
@@ -17,8 +17,9 @@
 // @grant        none
 // ==/UserScript==
 
-var flowWebsite=['www.porncomics.me',
-                 'www.3dhentaicomics.com'];
+var flowWebsite = ['www.porncomics.me',
+                   'www.3dhentaicomics.com',
+                   'www.xxxhentaimanga.com'];
 
 (function() {
     'use strict';
@@ -71,7 +72,6 @@ var flowWebsite=['www.porncomics.me',
         imagelist=document.querySelectorAll("div.gallery-list a");
     }
 
-
     removeQuery(imagelist);   
 
     /*
@@ -104,5 +104,5 @@ function isFlowWeb(imagelist){
         return false;
     }
     var check=flowWebsite.filter(p=>location.href.indexOf(p)>=0);
-    return check.length>0
+    return check.length>0 || typeof onScroll !== 'undefined'
 }
